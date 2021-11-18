@@ -1,0 +1,20 @@
+Package: findMean
+Title: Find mean of columns according to groups and add it to original tibble
+Version: 0.1.0
+Authors@R: 
+    person("Kashish", "Doshi", , "kdoshi@bccrc.ca", role = c("aut", "cre"))
+Description: Add a mean column to data-frame after grouping by another column. The new mean column name will add a "mean." prefix to the original column name ("mean.col_name"). This function uses the mutate [dplyr::mutate()] function and group_by [dplyr::group_by()] from the dplyr package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    tibble,
+    gapminder,
+    datateachr,
+    magrittr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
